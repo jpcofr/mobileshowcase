@@ -15,11 +15,11 @@ namespace InterAppComm.iOS
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-
+			var obj = new MyClass ();
 			// Perform any additional setup after loading the view, typically from a nib.
 			Button.AccessibilityIdentifier = "myButton";
 			Button.TouchUpInside += delegate {
-				var title = string.Format ("{0} clicks!", count++);
+				var title = string.Format ("{0} clicks!" + " Halla " + obj.WriteHallo (), count++);
 				Button.SetTitle (title, UIControlState.Normal);
 			};
 		}
