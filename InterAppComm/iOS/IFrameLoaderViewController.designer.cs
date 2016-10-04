@@ -12,16 +12,25 @@ using UIKit;
 namespace InterAppComm.iOS
 {
     [Register ("ViewController")]
-    partial class ViewController
+    partial class IFrameLoaderViewController
     {
         [Outlet]
         UIKit.UIButton Button { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIWebView webView { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
             if (Button != null) {
                 Button.Dispose ();
                 Button = null;
+            }
+
+            if (webView != null) {
+                webView.Dispose ();
+                webView = null;
             }
         }
     }
