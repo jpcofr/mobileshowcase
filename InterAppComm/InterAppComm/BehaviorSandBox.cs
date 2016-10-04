@@ -2,9 +2,9 @@
 using System.Security.Cryptography.X509Certificates;
 namespace InterAppComm
 {
-	public class MyClass
+	public class BehaviorSandBox
 	{
-		public MyClass ()
+		public BehaviorSandBox ()
 		{
 
 		}

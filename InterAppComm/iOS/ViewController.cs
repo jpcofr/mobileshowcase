@@ -15,7 +15,7 @@ namespace InterAppComm.iOS
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			var obj = new MyClass ();
+			var obj = new BehaviorSandBox ();
 			// Perform any additional setup after loading the view, typically from a nib.
 			Button.AccessibilityIdentifier = "myButton";
 			Button.TouchUpInside += delegate {
