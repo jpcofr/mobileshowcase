@@ -25,7 +25,7 @@ namespace InterAppComm
 
 		public string RequestIFrame ()
 		{
-			return "<!DOCTYPE html>\n<html>\n  <body>\n\n    <h1>iframe provider</h1>\n\n    <p>This is a basic iframe html container.</p>\n\n    <iframe src=\"://www.w3schools.com\"></iframe>\n  </body>\n</html>";
+			return "<!DOCTYPE html>\n<html>\n   <body>\n      <h1>iframe provider</h1>\n      <p>This is a basic iframe html container.</p>\n      <iframe src=\"http://eliq.se\">\n      </iframe>\n   </body>\n</html>\n";
 		}
 
 	}
