@@ -17,7 +17,7 @@ namespace InterAppComm.iOS
 			base.ViewDidLoad ();
 
 			Button.TouchUpInside += delegate {
-				WebView.LoadHtmlString (obj.RequestIFrame (), null);
+				WebView.LoadHtmlString (obj.RequestGenericIFrame (), null);
 			};
 
 			View.AddSubview (WebView);
@@ -27,5 +27,7 @@ namespace InterAppComm.iOS
 		{
 			base.DidReceiveMemoryWarning ();
 		}
+
+
 	}
 }

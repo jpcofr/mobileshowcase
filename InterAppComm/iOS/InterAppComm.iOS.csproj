@@ -116,6 +116,14 @@
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\InterAppComm\Resources\OpenApp.html">
+      <Link>Resources\mobileshowcase\InterAppComm\InterAppComm\Resources\OpenApp.html</Link>
+    </BundleResource>
+    <BundleResource Include="..\InterAppComm\Resources\OpenStore.html">
+      <Link>Resources\mobileshowcase\InterAppComm\InterAppComm\Resources\OpenStore.html</Link>
+    </BundleResource>
+  </ItemGroup>
   <Import Project="..\InterAppComm\InterAppComm.projitems" Label="Shared" Condition="Exists('..\InterAppComm\InterAppComm.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
