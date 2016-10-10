@@ -16,7 +16,6 @@ namespace InterAppComm.iOS
 		{
 			base.ViewDidLoad ();
 
-			Button.AccessibilityIdentifier = "myButton";
 			Button.TouchUpInside += delegate {
 				WebView.LoadHtmlString (obj.RequestIFrame (), null);
 			};

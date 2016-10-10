@@ -11,4 +11,11 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)BehaviorSandBox.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Resources\OpenStore.html" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\OpenApp.html" />
+  </ItemGroup>
 </Project>
