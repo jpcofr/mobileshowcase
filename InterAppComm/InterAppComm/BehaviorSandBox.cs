@@ -26,12 +26,12 @@ namespace InterAppComm
 
 		public string RequestGenericIFrame ()
 		{
-			return LoadWebContent ("");
+			return LoadWebContent ("./mobileshowcase/InterAppComm/InterAppComm/Resources/OpenApp.html");
 		}
 
 		public string RequestIFrame ()
 		{
-			return LoadWebContent ("");
+			return LoadWebContent ("./mobileshowcase/InterAppComm/InterAppComm/Resources/OpenStore.html"); ;
 		}
 
 		private static String LoadWebContent (string fileName)

@@ -45,11 +45,11 @@ Any aditional parameter will be passed as param to the app url
 	    function open_app() {
 	    	var customSchemeURL = QueryString.customSchemeURL ;	 
 	    	var customParams = "" ;
-	    	var separador = "" ;
+	    	var separator = "" ;
 	    	for (var key in QueryString) {
 	    		if (["customSchemeURL", "storeURL"].indexOf(key) < 0) {
-	    			customParams += separador + key + "=" + QueryString[key] ;
-	    			separador = "&" ;
+	    			customParams += separator + key + "=" + QueryString[key] ;
+	    			separator = "&" ;
 	    		}
 	    	}   	
 
