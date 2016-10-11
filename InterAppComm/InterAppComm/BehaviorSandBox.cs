@@ -26,26 +26,28 @@ namespace InterAppComm
 
 		public string RequestGenericIFrame ()
 		{
-			return LoadWebContent ();
+			return LoadWebContent ("");
 		}
 
 		public string RequestIFrame ()
 		{
-			return;
+			return LoadWebContent ("");
 		}
 
-		private static void LoadWebContent (string fileName)
+		private static String LoadWebContent (string fileName)
 		{
-			try {   // Open the text file using a stream reader.
+			string htmlSrc = string.Empty;
+			try {
 				using (StreamReader sr = new StreamReader (fileName)) {
-					// Read the stream to a string, and write the string to the console.
+
 					String line = sr.ReadToEnd ();
-					Console.WriteLine (line);
+					htmlSrc = line;
 				}
 			} catch (Exception e) {
 				Console.WriteLine ("The file could not be read:");
 				Console.WriteLine (e.Message);
 			}
+			return htmlSrc;
 		}
 	}
 }
