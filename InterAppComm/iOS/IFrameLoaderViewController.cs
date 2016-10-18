@@ -17,7 +17,7 @@ namespace InterAppComm.iOS
 			base.ViewDidLoad ();
 
 			Button.TouchUpInside += delegate {
-				WebView.LoadHtmlString (obj.RequestGenericIFrame (), null);
+				WebView.LoadHtmlString (BehaviorSandBox.LoadWebContent (BehaviorSandBox.IOS_OpenApp), null);
 			};
 
 			View.AddSubview (WebView);

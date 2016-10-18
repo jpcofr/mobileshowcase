@@ -10,31 +10,14 @@ namespace InterAppComm
 
 		}
 
-		public string WriteHallo ()
-		{
-			Random c = new Random ();
-			var n = c.Next () % 3;
-			if (n == 0) {
-				return "Hey boy";
-			} else if (n == 1) {
-				return "Hey girl";
-			} else {
-				return "here we go!";
-			}
+		public const string IOS_OpenApp = "./mobileshowcase/InterAppComm/InterAppComm/html/OpenApp.html";
+		public const string IOS_OpenStore = "./mobileshowcase/InterAppComm/InterAppComm/html/OpenStore.html";
 
-		}
+		public const string Droid_OpenApp = "./OpenApp.html";
+		public const string Droid_OpenStore = "./OpenStore.html";
 
-		public string RequestGenericIFrame ()
-		{
-			return LoadWebContent ("./mobileshowcase/InterAppComm/InterAppComm/Resources/OpenApp.html");
-		}
 
-		public string RequestIFrame ()
-		{
-			return LoadWebContent ("./mobileshowcase/InterAppComm/InterAppComm/Resources/OpenStore.html"); ;
-		}
-
-		private static String LoadWebContent (string fileName)
+		public static String LoadWebContent (string fileName)
 		{
 			string htmlSrc = string.Empty;
 			try {
