@@ -5,7 +5,6 @@
   <title>Open App</title>
   <p>Custom scheme: <div id="customSchemeURL"></div></p>
   <p>Store URL:     <div id="storeURL"></div></p>
-
 <!--
 Based on the code at https://gist.github.com/noelrocha/e423ff9ec98011e10ef7
 URL Params:
@@ -37,7 +36,7 @@ Any aditional parameter will be passed as param to the app url
       function open_store() {
         document.getElementById("storeURL").innerHTML = QueryString.storeURL;
         //console.log("Timeout. Open fallback url: " + QueryString.storeURL) ;
-        //document.location.href = QueryString.storeURL ;
+        document.location.href = QueryString.storeURL ;
       }
 
       var timeout;
@@ -57,7 +56,7 @@ Any aditional parameter will be passed as param to the app url
         }
 
         var appURL = QueryString.customSchemeURL; //+ "?" + customParams ;
-        //document.location.href = appURL ;
+        document.location.href = appURL ;
         //console.log("Opening URL: " + appURL) ;
     document.getElementById("customSchemeURL").innerHTML = appURL;
         open_store_timeout() ;

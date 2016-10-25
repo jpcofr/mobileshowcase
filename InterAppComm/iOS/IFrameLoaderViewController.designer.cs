@@ -21,10 +21,6 @@ namespace InterAppComm.iOS
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIWebView WebView { get; set; }
 
-        [Action ("Button_TouchUpInside:")]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        partial void Button_TouchUpInside (UIKit.UIButton sender);
-
         void ReleaseDesignerOutlets ()
         {
             if (Button != null) {

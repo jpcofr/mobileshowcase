@@ -24,9 +24,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="0.0" y="36" width="375" height="72"/>
                                 </variation>
-                                <connections>
-                                    <action selector="Button_TouchUpInside:" destination="BYZ-38-t0r" id="7" eventType="touchUpInside"/>
-                                </connections>
+                                <connections/>
                             </button>
                             <webView contentMode="center" id="3" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="20" y="87" width="335" height="568"/>
