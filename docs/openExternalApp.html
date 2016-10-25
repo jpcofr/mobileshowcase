@@ -41,7 +41,7 @@ Any aditional parameter will be passed as param to the app url
 
       var timeout;
       function open_store_timeout() {
-          timeout = setTimeout('open_store()', 400);
+          timeout = setTimeout('open_store()', 2000);
       }
 
       function open_app() {
@@ -58,7 +58,7 @@ Any aditional parameter will be passed as param to the app url
         var appURL = QueryString.customSchemeURL; //+ "?" + customParams ;
         document.location.href = appURL ;
         //console.log("Opening URL: " + appURL) ;
-    document.getElementById("customSchemeURL").innerHTML = appURL;
+        document.getElementById("customSchemeURL").innerHTML = appURL;
         open_store_timeout() ;
       }
   </script>
