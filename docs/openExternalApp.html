@@ -35,7 +35,7 @@ Any aditional parameter will be passed as param to the app url
 
       function open_store() {
         document.getElementById("storeURL").innerHTML = QueryString.storeURL;
-        //console.log("Timeout. Open fallback url: " + QueryString.storeURL) ;
+        console.log("Timeout. Open fallback url: " + QueryString.storeURL) ;
         document.location.href = QueryString.storeURL ;
       }
 
@@ -56,10 +56,10 @@ Any aditional parameter will be passed as param to the app url
         }
 
         var appURL = QueryString.customSchemeURL; //+ "?" + customParams ;
-        document.location.href = appURL ;        
-        //console.log("Opening URL: " + appURL) ;
+        document.location.href = appURL ;
+        console.log("Opening URL: " + appURL) ;
         document.getElementById("customSchemeURL").innerHTML = appURL;
-        //open_store_timeout() ;
+        open_store_timeout() ;
       }
   </script>
 </head>
