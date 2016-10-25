@@ -35,7 +35,7 @@
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Juan Pablo Contreras Franco (TM57F4JGKM)</CodesignKey>
     <MtouchUseSGen>true</MtouchUseSGen>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <MtouchFloat32>true</MtouchFloat32>
@@ -45,6 +45,7 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>efd033e8-faa2-4bab-b0c9-c3de48ab16a2</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
@@ -88,12 +89,10 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="Rivets">
-      <HintPath>..\Components\rivets-1.0.5.1\lib\ios-unified\Rivets.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Resources\html\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
@@ -111,17 +110,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <XamarinComponentReference Include="rivets">
-      <Version>1.0.5.1</Version>
-      <Visible>False</Visible>
-    </XamarinComponentReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="..\InterAppComm\static_html\OpenApp.html">
-      <Link>Resources\static_html\OpenApp.html</Link>
+    <BundleResource Include="..\InterAppComm\html\OpenApp.html">
+      <Link>Resources\html\OpenApp.html</Link>
     </BundleResource>
-    <BundleResource Include="..\InterAppComm\static_html\OpenStore.html">
-      <Link>Resources\static_html\OpenStore.html</Link>
+    <BundleResource Include="..\InterAppComm\html\OpenStore.html">
+      <Link>Resources\html\OpenStore.html</Link>
     </BundleResource>
   </ItemGroup>
   <Import Project="..\InterAppComm\InterAppComm.projitems" Label="Shared" Condition="Exists('..\InterAppComm\InterAppComm.projitems')" />

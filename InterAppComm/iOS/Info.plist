@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleName</key>
 	<string>InterAppComm</string>
-	<key>CFBundleIdentifier</key>
-	<string>org.jpcofr.interappcomm</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -43,5 +41,7 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>CFBundleIdentifier</key>
+	<string>se.eliq.test</string>
 </dict>
 </plist>

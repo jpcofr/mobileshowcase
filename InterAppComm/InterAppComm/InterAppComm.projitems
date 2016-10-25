@@ -17,5 +17,6 @@
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)html\OpenStore.html" />
     <None Include="$(MSBuildThisFileDirectory)html\OpenApp.html" />
+    <None Include="$(MSBuildThisFileDirectory)html\openExternalApp.html" />
   </ItemGroup>
 </Project>
