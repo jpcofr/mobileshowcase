@@ -1,7 +1,66 @@
 <!DOCTYPE html>
 <html>
-   <head>
-   <body>
-      <h1>Test to check if the web page is being served.</h1>
-   </body>
+<head>
+	<meta charset="UTF-8">
+	<title>Open App</title>
+
+<!--
+Based on the code at https://gist.github.com/noelrocha/e423ff9ec98011e10ef7
+URL Params:
+
+customSchemeURL: Your custom scheme app
+storeURL: Your app url at App Store or Google Play
+
+Any aditional parameter will be passed as param to the app url
+-->
+	<script language="javascript">
+		var QueryString = function () {
+		  var query_string = {};
+		  var query = window.location.search.substring(1);
+		  var vars = query.split("&");
+		  for (var i=0;i<vars.length;i++) {
+		    var pair = vars[i].split("=");
+		    if (typeof query_string[pair[0]] === "undefined") {
+		      query_string[pair[0]] = pair[1];
+		    } else if (typeof query_string[pair[0]] === "string") {
+		      var arr = [ query_string[pair[0]], pair[1] ];
+		      query_string[pair[0]] = arr;
+		    } else {
+		      query_string[pair[0]].push(pair[1]);
+		    }
+		  }
+		    return query_string;
+		} ();
+
+	    function open_store() {
+	    	console.log("Timeout. Open fallback url: " + QueryString.storeURL) ;
+	    	document.location.href = QueryString.storeURL ;
+	    }
+
+	    var timeout;
+	    function open_store_timeout() {
+	        timeout = setTimeout('open_store()', 400);
+	    }
+
+	    function open_app() {
+	    	var customSchemeURL = QueryString.customSchemeURL ;
+	    	var customParams = "" ;
+	    	var separator = "" ;
+	    	for (var key in QueryString) {
+	    		if (["customSchemeURL", "storeURL"].indexOf(key) < 0) {
+	    			customParams += separator + key + "=" + QueryString[key] ;
+	    			separator = "&" ;
+	    		}
+	    	}
+
+	    	var appURL = QueryString.customSchemeURL + "?" + customParams ;
+	    	document.location.href = appURL ;
+	    	console.log("Opening URL: " + appURL) ;
+
+	    	open_store_timeout() ;
+	    }
+	</script>
+</head>
+<body onLoad="open_app()" style="background: #00A4E6">
+</body>
 </html>

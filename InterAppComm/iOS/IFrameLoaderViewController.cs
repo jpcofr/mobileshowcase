@@ -1,6 +1,6 @@
 ﻿using System;
 using UIKit;
-using System.Resources;
+
 
 namespace InterAppComm.iOS
 {

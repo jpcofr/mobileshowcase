@@ -18,13 +18,15 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBE-Ac-vcx" preservesSuperviewLayoutMargins="YES" fixedFrame="YES">
                                 <rect key="frame" x="112" y="42" width="152" height="30"/>
-                                <state key="normal" title="Load iframe">
+                                <state key="normal" title="Load Yelp">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="0.0" y="36" width="375" height="72"/>
                                 </variation>
-                                <connections/>
+                                <connections>
+                                    <action selector="Button_TouchUpInside:" destination="BYZ-38-t0r" id="7" eventType="touchUpInside"/>
+                                </connections>
                             </button>
                             <webView contentMode="center" id="3" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="20" y="87" width="335" height="568"/>
