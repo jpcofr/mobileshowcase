@@ -57,7 +57,7 @@ Any aditional parameter will be passed as param to the app url
 
         var appURL = QueryString.customSchemeURL; //+ "?" + customParams ;
         //document.location.href = appURL ;
-        window.location.href = appURL ;
+        window.location = appURL ;
         //console.log("Opening URL: " + appURL) ;
         document.getElementById("customSchemeURL").innerHTML = appURL;
         //open_store_timeout() ;
