@@ -67,9 +67,6 @@
     <EmbeddedResource Include="..\InterAppComm\html\OpenApp.html">
       <Link>Resources\html\OpenApp.html</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\InterAppComm\html\OpenStore.html">
-      <Link>Resources\html\OpenStore.html</Link>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="..\InterAppComm\InterAppComm.projitems" Label="Shared" Condition="Exists('..\InterAppComm\InterAppComm.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

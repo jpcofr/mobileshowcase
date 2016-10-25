@@ -113,9 +113,6 @@
     <BundleResource Include="..\InterAppComm\html\OpenApp.html">
       <Link>Resources\html\OpenApp.html</Link>
     </BundleResource>
-    <BundleResource Include="..\InterAppComm\html\OpenStore.html">
-      <Link>Resources\html\OpenStore.html</Link>
-    </BundleResource>
   </ItemGroup>
   <Import Project="..\InterAppComm\InterAppComm.projitems" Label="Shared" Condition="Exists('..\InterAppComm\InterAppComm.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
